@@ -1,6 +1,3 @@
-// {} [] ()
-// we need a dictionary
-
 const pairs = {
     "[": "]",
     "{": "}",
@@ -29,7 +26,6 @@ var isValid = function(s) {
             return false
         }
     }
+    if (stack.length > 0) return false
     return true
 };
-
-// console.log("true", isValid("{([])}"));
